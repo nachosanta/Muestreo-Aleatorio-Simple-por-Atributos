@@ -25,4 +25,12 @@ while (TRUE) {
     j<-j-1
   }
 }
+if (j < R_mayuscula | j < n){ #el LI no puede ser realmente menor a R ni a n
+  if (R_mayuscula > n){
+    j <- R_mayuscula
+  }
+  else {
+    j <- n
+  }
+}
 print(c(N_inf = j, N_sup = i))
