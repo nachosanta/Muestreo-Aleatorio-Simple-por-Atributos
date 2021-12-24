@@ -25,4 +25,7 @@ while (TRUE) {
     j<-j-1
   }
 }
+if (j < r){ #el LI no puede ser realmente menor a r
+  j <- r
+}
 print(c(R_inf = j, R_sup = i))
